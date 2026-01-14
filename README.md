@@ -163,7 +163,6 @@ If SystemView is not required for the demo, the init calls can be disabled (remo
 - SystemView integration impacts runtime:
   - ensure correct UART setup and that instrumentation does not conflict with timing-critical paths
 
----
 
 ## 9. Repository / submission structure
 
@@ -173,14 +172,7 @@ If SystemView is not required for the demo, the init calls can be disabled (remo
 - `0152/Core/Src/ssd1306_min.c` : OLED driver (framebuffer + I2C burst update)
 - `0152/0152.ioc` : CubeMX configuration (pins, peripherals, middleware)
 
-### Clean submission recommendation
-For a grader-friendly zip, keep:
-- `Core/`, `Drivers/`, `Middlewares/`, `.ioc`, `.project`, `.cproject`, linker scripts
 
-Recommended to remove (build artefacts / noise):
-- `Debug/` or `Release/`
-- `Core/Inc/Backup/` and `Core/Src/Backup/`
-- temporary logs unless explicitly requested
 
 ---
 
